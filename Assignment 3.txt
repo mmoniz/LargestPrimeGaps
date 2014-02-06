@@ -18,5 +18,3 @@ a -|---g1---[--|--]-----g2---[--|--]----g3---[--|----]---g4---|- b
 
 -pass the gap to the previous process (need to check if there are any primes)
 -handle when each process has 0 primes in its range
-
-Russell solved this better..
