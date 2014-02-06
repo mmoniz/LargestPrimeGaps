@@ -1,0 +1,11 @@
+#!/bin/bash
+N=(1000000 100000000 1000000000)
+for((i=0;i < 3;i=i+1))
+do
+	for p in 1 2 4 6 8 10 12 14 16 18 20 22 24 26 28 30 32
+	do
+		n=${N[$i]}
+		#echo mpirun -np $p ./A2perf $n
+		sqsub -r 30m --mpp 10GB -o ./graph/log-$p-$n.txt -q mpi -n $p ./primes 2 $n
+	done
+done

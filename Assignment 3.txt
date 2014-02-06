@@ -1,0 +1,22 @@
+Assignment 3
+------------
+
+Write an MPI program to try and find the largest gap between two prime numbers.
+
+Example:
+	11_13 = 2
+	13_17 = 4
+	31_33 = 2
+
+Gnu Multiple Precision (GMP) Library
+
+mpz_prob_prime_p
+mpz_nextprime
+	P0		P1		P2		P3
+
+a -|---g1---[--|--]-----g2---[--|--]----g3---[--|----]---g4---|- b
+
+-pass the gap to the previous process (need to check if there are any primes)
+-handle when each process has 0 primes in its range
+
+Russell solved this better..
